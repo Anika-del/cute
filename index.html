@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pepsi website landing Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+     <section class="sec">
+     <header>
+     	<a href=""><img src="D:/aaaaaaa/Landing-page/logo.png" class="logo"></a>
+     	<ul>
+     		<li><a href="">Home</a></li>
+     		<li><a href="">Product</a></li>
+     		<li><a href="">What's New</a></li>
+     		<li><a href="">Newslettest</a></li>
+     		<li><a href="">Contact</a></li>
+     	</ul>
+     </header>
+     <div class="content">
+     	<div class="textBox">
+     		<h2>That's Whats<br><span>I like</span></h2>
+     		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sen do eiusmod
+     		tempor incididunt ut lbore et donore magna aliqua. Ut enim ad minim veniam, 
+     	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commondo
+            consequt.</p>
+            <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+            	<img src="D:/aaaaaaa/Landing-page/pepsi001.png" class="pepsi">
+           </div>	
+     </div>
+     <ul class="thumb">
+     	<li><img src="D:/aaaaaaa/Landing-page/pepsi001.png" onclick="imgSlider('D:/aaaaaaa/Landing-page/pepsi001.png');changeBgColor('#0062be')"></li>
+     	<li><img src="D:/aaaaaaa/Landing-page/pepsi002.png" onclick="imgSlider('D:/aaaaaaa/Landing-page/pepsi002.png');changeBgColor('#e60c2c')"></li>
+     	<li><img src="D:/aaaaaaa/Landing-page/pepsi003.png" onclick="imgSlider('D:/aaaaaaa/Landing-page/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+     </ul>
+     <ul class="sci">
+     	<li><a href="#"><img src="D:/aaaaaaa/Landing-page/facebook.png"></a></li>
+     	<li><a href="#"><img src="D:/aaaaaaa/Landing-page/twitter.png"></a></li>
+     	<li><a href="#"><img src="D:/aaaaaaa/Landing-page/instagram.png"></a></li>
+     </ul>
+     </section>
+     <script type="text/javascript">
+     	function imgSlider(arything) {
+     		document.querySelector('.pepsi').src = arything; 
+     	}
+     	function changeBgColor(color) {
+     		const sec = document.querySelector('.sec');
+     		sec.style.background = color; 
+     	}
+     </script>
+</body>
+</html>
